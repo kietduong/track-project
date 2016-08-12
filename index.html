@@ -24,34 +24,37 @@
           <li>PHP/Drupal</li>
         </ul>
       </div>
-      Each track has it's own benefits to offer and each track focus' on a different language. For now we will look at the languages
+      Each track has it's own benefits to offer and each track focus' on a different language. For now we will look at three languages. Although there are many more, these are what we will be looking at.
       <div class="languages">
-        <ul>
+        <ol>
           <li>Java</li>
           <li>CSS</li>
           <li>PHP</li>
-        </ul>
+        </ol>
       </div>
       In order to help you determine a little better the track to take, we have a few questions and can give you a suggestion based on your answers.
     </p>
-    <form>
+    <form id="track">
     <div class="form-group">
-      <p>First let's consider the kind of programming you prefer. Front-end, which is more focused on what shows up on the webpage itself and the information that is in the browser itself. Though it is not neccesarily what makes a webpage "pretty," it is an essential component. Then we have Back-end which is more focused on the information within the server. It's what keeps things moving in the right direction data-wise and makes sure the interaction with the webpage is correct. lastly, we have what is called Full-stack, which can be considered a mix of both front-end and back-end.</p>
+      <p>First let's consider the kind of programming you prefer. <strong>Front-end</strong>, which is more focused on what shows up on the webpage itself and the information that is in the browser itself. Though it is not neccesarily what makes a webpage "pretty," it is an essential component. Then we have <strong>Back-end</strong> which is more focused on the information within the server. It's what keeps things moving in the right direction data-wise and makes sure the interaction with the webpage is correct. lastly, we have what is called <strong>Full Stack</strong>, which can be considered a mix of both front-end and back-end.</p>
         <label for="end">What kind of programming do you prefer?</label>
         <select id="end">
+          <option value="blank">select</option>
           <option value="front">Front end</option>
           <option value="back">Back end</option>
-          <option value="back">Full stack</option>
+          <option value="stack">Full stack</option>
         </select>
       <p>Now are you more interested in design or program development?</p>
         <label for="preference">Choose your preference</label>
         <select id="surveyquestion2">
+          <option value="blank">select</option>
           <option value="design">Design</option>
           <option value="development">Program Development</option>
         </select>
       <p>What are you career are you more interested in</p>
         <label for="career">Choose your career</label>
-        <select id="surveyquestion2">
+        <select id="surveyquestion3">
+          <option value="blank">select</option>
           <option value="design">Web designer</option>
           <option value="development">Program developer</option>
           <option value="dog">Dog walker</option>
@@ -88,9 +91,19 @@
           <input id="name" class="form-control" type="text">
         </div>
       </div>
-
+        <div class="button">
         <button id="button" type="submit" class="btn">Submit</button>
+        </div>
       </form>
+      <div id="css">
+        <img src="img/css.jpg" alt="CSS" />
+      </div>
+      <div id="java">
+        <img src="img/java.png" alt="JAVA" />
+      </div>
+      <div id="php">
+        <img src="img/php.png" alt="PHP" />
+      </div>
     </div>
     </p>
   </body>
