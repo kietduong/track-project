@@ -11,7 +11,9 @@
     <title>What Track Should I take?</title>
   </head>
   <body>
-    <h1>What Programming Track Should You Take?</h1>
+    <div class="jumbotron">
+      <h1>What Programming Track Should You Take?</h1>
+    </div>
     <p>
       If you find yourself asking what kind of programming track you should take after Intro to Programming then look no further for answers!
       This page will help you make the decision. First, we must look at some of the tracks offered. Some of the available tracks at Epicodus are
@@ -22,13 +24,72 @@
           <li>PHP/Drupal</li>
         </ul>
       </div>
-      Each has it's own benefits to offer. 
+      Each track has it's own benefits to offer and each track focus' on a different language. For now we will look at the languages
+      <div class="languages">
+        <ul>
+          <li>Java</li>
+          <li>CSS</li>
+          <li>PHP</li>
+        </ul>
+      </div>
+      In order to help you determine a little better the track to take, we have a few questions and can give you a suggestion based on your answers.
     </p>
-    <div class="container">
-      <form id="classes">
+    <form>
+    <div class="form-group">
+      <p>First let's consider the kind of programming you prefer. Front-end, which is more focused on what shows up on the webpage itself and the information that is in the browser itself. Though it is not neccesarily what makes a webpage "pretty," it is an essential component. Then we have Back-end which is more focused on the information within the server. It's what keeps things moving in the right direction data-wise and makes sure the interaction with the webpage is correct. lastly, we have what is called Full-stack, which can be considered a mix of both front-end and back-end.</p>
+        <label for="end">What kind of programming do you prefer?</label>
+        <select id="end">
+          <option value="front">Front end</option>
+          <option value="back">Back end</option>
+          <option value="back">Full stack</option>
+        </select>
+      <p>Now are you more interested in design or program development?</p>
+        <label for="preference">Choose your preference</label>
+        <select id="surveyquestion2">
+          <option value="design">Design</option>
+          <option value="development">Program Development</option>
+        </select>
+      <p>What are you career are you more interested in</p>
+        <label for="career">Choose your career</label>
+        <select id="surveyquestion2">
+          <option value="design">Web designer</option>
+          <option value="development">Program developer</option>
+          <option value="dog">Dog walker</option>
+        </select>
+        <p>Lets also take into consideration what kind of place you would like to work for, pick a place where you would like to work.</p>
+        <div class="enterprise">
+          <label>
+            <input type="radio" name="operator">
+            Enterprise
+          </label>
+        </div>
+        <div class="Start-up">
+          <label>
+            <input type="radio" name="operator">
+            Start-up
+          </label>
+        </div>
+        <div class="skate">
+          <label>
+            <input type="radio" name="operator">
+            Skate board design company
+          </label>
+        </div>
+      </select>
+      <p>
+        Lastly, what is your favorite animal?
+      </p>
+      <div id="blanks">
+      <form>
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+          <label for="animal">type in here</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+      </div>
 
-
-
+        <button id="button" type="submit" class="btn">Submit</button>
       </form>
     </div>
     </p>
